@@ -52,4 +52,18 @@ print(result)
 result = list(map(lambda number: number * 2, numbers))
 print(result)
 
+# Filter
+
+def filter_function(number):
+    if number > 10:
+        return True
+    return False
+
+print(list(filter(filter_function, numbers)))
+print(list(filter(lambda number: number > 10, numbers)))
+
+
+
+
+
 
