@@ -49,3 +49,7 @@ def multiply_two(number):
 result = list(map(multiply_two, numbers))
 print(result)
 
+result = list(map(lambda number: number * 2, numbers))
+print(result)
+
+
