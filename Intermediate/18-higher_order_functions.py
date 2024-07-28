@@ -17,3 +17,14 @@ def sum_values(num1, num2, f):
 results = sum_values(1, 3, sum_one)
 print(results)
 
+
+### CLOSURES ###
+print("**** Closures ****")
+
+def sum_ten():
+    def add(value):
+        return value + 10
+    return add
+
+closures = sum_ten()
+print(closures(10))
