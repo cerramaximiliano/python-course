@@ -36,3 +36,16 @@ def sum_value(original_value):
 
 add_closure = sum_value(5)(1)
 print(add_closure)
+
+### Built-in Higher Order Functions ###
+print("**** Built-in Higher Order Functions ****")
+
+numbers = [1,2,8,14]
+
+# Map
+def multiply_two(number):
+    return number * 2
+
+result = list(map(multiply_two, numbers))
+print(result)
+
