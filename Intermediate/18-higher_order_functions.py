@@ -28,3 +28,11 @@ def sum_ten():
 
 closures = sum_ten()
 print(closures(10))
+
+def sum_value(original_value):
+    def add(value):
+        return value + 10 + original_value
+    return add
+
+add_closure = sum_value(5)(1)
+print(add_closure)
