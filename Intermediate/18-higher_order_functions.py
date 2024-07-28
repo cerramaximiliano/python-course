@@ -63,7 +63,13 @@ print(list(filter(filter_function, numbers)))
 print(list(filter(lambda number: number > 10, numbers)))
 
 
+## Reduce
 
+from functools import reduce
 
+def sum_two_values (num1, num2):
+    return num1 + num2
+
+print(reduce(sum_two_values, numbers))
 
 
