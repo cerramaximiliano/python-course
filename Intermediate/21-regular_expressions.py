@@ -25,5 +25,10 @@ email = "cerramaximiliano@gmail.com"
 
 findall = re.findall("lección", my_string, re.I)
 print(findall)
+
 split = re.split(":", my_other_string)
 print(split)
+
+substitution = re.sub("Esta", "esta", my_string)
+print(substitution)
+
