@@ -2,7 +2,7 @@
 
 import re
 
-my_string = "Esta es la lección 21 del curso de Python"
+my_string = "Esta es la lección 21 del curso de Python: Expresiones Regulares"
 my_other_string = "Esta no es la lección 21: lección 1"
 
 match = re.match("Esta es la lección", my_string, re.I)
@@ -32,3 +32,14 @@ print(split)
 substitution = re.sub("Esta", "esta", my_string)
 print(substitution)
 
+# Patterns
+pattern = r'[lL]ección'
+print(re.findall(pattern, my_string))
+pattern = r'[lL]ección|Expresiones'
+print(re.findall(pattern, my_string))
+pattern = r'[0-9]'
+print(re.findall(pattern, my_string))
+pattern = r'\d'
+print(re.findall(pattern, my_string))
+pattern = r'\D'
+print(re.findall(pattern, my_string))
