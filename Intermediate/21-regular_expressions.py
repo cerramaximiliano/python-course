@@ -51,3 +51,5 @@ print(re.findall(pattern, email))
 
 email = "mouredev@mouredev.com.mx"
 print(re.findall(pattern, email))
+
+# Para aprender y validar expresiones regulares: https://regex101.com
